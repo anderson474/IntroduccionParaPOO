@@ -33,5 +33,9 @@ public class PruebaPersona {
         Carro usuario1= new Carro("chevroletSpark",12345,2,3,"Alberto");
         System.out.println(usuario1.getDimensions());
 
+        Registradora persona1 = new Registradora("Juanes");
+        System.out.println("Persona 1: "+persona1);
+        System.out.println("No. de personas: "+Registradora.getContadorPersonas());
+
     }
 }
