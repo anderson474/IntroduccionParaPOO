@@ -1,6 +1,6 @@
 # IntroduccionParaPOO
 En este taller se implemeta los conceptos basicos de creación de clases y objetos
-con los requisitos de que tiene que haber encpsulamiento de tipo protegido
+con los requisitos de que tiene que existir encapsulamiento de tipo protegido
 publico y privado, como en este taller no es necesario incluir herencias 
 entonces los que sean protegidos no se va a ver muco el cambio ya que 
 el acceso se restringen así:
