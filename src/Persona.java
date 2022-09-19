@@ -4,7 +4,13 @@
  */
 import java.util.Date;
 public class Persona {
-    // atributos de nuestra clase
+    /**
+     * @param name representa el nombre de una persona
+     * @param datebirth representa la fecha de nacimiento de una persona
+     * @param lastname1 representa el primer apellido
+     * @param lastname2 representa el segundo apellido
+     * @param height representa la altura de una persona
+     */
     String name;
     Date datebirth;
     private String lastname1;
@@ -38,13 +44,16 @@ public class Persona {
 
     public void setBirthday(int year, int month, int day){
         /**
-         * Esta funcion nos configura los datos d enacimiento en una sola variable de t
-         * tipi date
+         * Este método nos configura los datos de enacimiento en una sola variable de tipo
+         * date
          */
         this.datebirth = new Date((year-1900), month-1, day);
     }
     public void getBirthday(){
-        System.out.println(this.datebirth);
+        /**
+         * Este método devuelve la impresión de la fecha de nacimiento
+         */
+        System.out.println("la fecha de nacimiento es: "+this.datebirth);
     }
 
 

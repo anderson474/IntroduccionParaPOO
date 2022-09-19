@@ -4,11 +4,27 @@
  */
 import java.util.ArrayList;
 public class Fruta {
+    /**
+     * @param colors es una variable que instancia de una clase Array<String>
+     * @param name atributo que guarda el nombre de la persona
+     * @param
+     */
     ArrayList<String> colors = new ArrayList<String>();
     private String name;
     private float averageWeight;
 
-    protected void setColors(String color) {this.colors.add(color);}
+    protected void setColors(String color) {
+        /**
+         * Cada vez que se mande un atributo color
+         * se agrega a un array
+         */
+        this.colors.add(color);
+    }
 
-    public void getColors() {System.out.println(this.colors);}
+    public void getColors() {
+        /**
+         * devuleve la impresión del string completo
+         */
+        System.out.println(this.colors);
+    }
 }

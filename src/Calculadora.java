@@ -12,7 +12,12 @@ public class Calculadora {
     public int sumar() {return this.a+this.b;}
     public int restar() {return this.a-this.b;}
     public int division(){
-        if(this.a/this.b!=0){
+        /**
+         * @throws devuelve sun cero cuando el divisor es igual a cero
+         * @param a es el dividendo
+         * @param b es el divisor
+         */
+        if(this.b!=0){
             return this.a/this.b;
         }
         else{

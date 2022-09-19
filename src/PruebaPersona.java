@@ -4,12 +4,12 @@
  */
 public class PruebaPersona {
     public static void main(String[] args) {
-        // creacion de un objeto de tipo persona
-        Persona p1 = new Persona("JHON ANDERSON","Galeano ","SAntillana ",1.70);//instanciando un objeto de la calse persona
+
+        Persona p1 = new Persona("Jhon Anderson","Galeano ","Santillana ",1.70);//instanciando un objeto de la calse persona
         var nameComplete = p1.getName();
         p1.setBirthday(1999, 10, 10);
         p1.getBirthday();
-        System.out.println(nameComplete);
+        System.out.println("Su nombre completo es: "+nameComplete);
 
         Fruta fruta1 = new Fruta();//instanciando un objeto de la calse persona
         fruta1.setColors("amarillo");
@@ -17,8 +17,9 @@ public class PruebaPersona {
         fruta1.setColors("azul");
         fruta1.getColors();
 
-        CuentaBancaria cuenta1 = new CuentaBancaria(true, 123456);
-        String cuenta = cuenta1.getActivated();
+        CuentaBancaria cuenta1 = new CuentaBancaria( 123456);
+        cuenta1.setActived();
+        String cuenta = cuenta1.getCuenta();
         System.out.println(cuenta);
 
         Calculadora op = new Calculadora(5,5);
@@ -31,11 +32,19 @@ public class PruebaPersona {
 
 
         Carro usuario1= new Carro("chevroletSpark",12345,2,3,"Alberto");
-        System.out.println(usuario1.getDimensions());
+        System.out.println(usuario1.toString());
 
-        Registradora persona1 = new Registradora("Juanes");
-        System.out.println("Persona 1: "+persona1);
+
+
+
         System.out.println("No. de personas: "+Registradora.getContadorPersonas());
+        Registradora persona1 = new Registradora("Juanes");
+        System.out.println("Persona 1: "+persona1.getNombre());
+        System.out.println("No. de personas: "+Registradora.getContadorPersonas());
+        Registradora persona2 = new Registradora("Juanes");
+        System.out.println("Persona 1: "+persona2.getNombre());
+        System.out.println("No. de personas: "+Registradora.getContadorPersonas());
+
 
     }
 }

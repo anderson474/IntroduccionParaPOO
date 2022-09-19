@@ -5,8 +5,13 @@
 public class Carro {
     /**
      * definicción de los atributos de la clase.
+     * @param model representa el modelo del carro.
+     * @param Serial representa el codigo serial del producto (en este caso el carro).
+     * @param lenght representa el ancho del automóvil.
+     * @param height representa el alto del automóvil.
+     * @param owner representa el nombre del dueño.
      */
-    private String model;
+    protected String model;
     private int serial;
     private int lenght;
     private  int height;
@@ -15,7 +20,7 @@ public class Carro {
     public Carro(String model,int serial, int lenght, int height, String owner){
         /**
          * Constructor de la clase Carro
-         * @param model se asigna el argumento del constructor al metodo
+         * @param model se asigna el argumento del constructor al método,
          * y es lo mismo para los demás
          */
         this.model = model;
@@ -27,11 +32,12 @@ public class Carro {
     }
     private int setDimensions(){
         /**
-         * @return devuelve la multiplicación entre variables locales
+         * @return devuelve la dimensión de un carro.
          */
         return this.lenght*this.height;
     }
-    protected String getDimensions(){
+
+    public String toString(){
         /**
          * @return devuelve una cadena con la respuesta deseada.
          */
