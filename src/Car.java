@@ -2,7 +2,7 @@
  * Reperesenta las características que estan presentes en un carro.
  * @author Jhon Anderson Galeano Santillana.
  */
-public class Carro {
+public class Car {
     /**
      * definicción de los atributos de la clase.
      * @param model representa el modelo del carro.
@@ -17,7 +17,7 @@ public class Carro {
     private  int height;
     private  String owner;
 
-    public Carro(String model,int serial, int lenght, int height, String owner){
+    public Car(String model, int serial, int lenght, int height, String owner){
         /**
          * Constructor de la clase Carro
          * @param model se asigna el argumento del constructor al método,

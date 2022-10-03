@@ -3,7 +3,7 @@
  * @author Jhon Anderson Galeano Santillana.
  */
 import java.util.ArrayList;
-public class Fruta {
+public class Fruit {
     /**
      * @param colors es una variable que instancia de una clase Array<String>
      * @param name atributo que guarda el nombre de la persona

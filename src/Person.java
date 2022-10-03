@@ -3,7 +3,7 @@
  * @author Jhon Anderson Galeano Santillana.
  */
 import java.util.Date;
-public class Persona {
+public class Person {
     /**
      * @param name representa el nombre de una persona
      * @param datebirth representa la fecha de nacimiento de una persona
@@ -17,10 +17,12 @@ public class Persona {
     private String lastname2;
     private double height;
 
+
+
     // metodos
     // la usaran los objetos de esta clase
 
-    public Persona(String name, String lastname1,String lastname2,  double height  ){
+    public Person(String name, String lastname1, String lastname2, double height  ){
         /**
          * Se inicializa el constructor
          */
@@ -33,7 +35,7 @@ public class Persona {
         /**
          *@return Se configura el nombre completo concatenandolo con sus apellidos
          */
-        return this.name+this.lastname1+this.lastname2;
+        return this.name+" "+this.lastname1+" "+this.lastname2;
     }
     protected String getName(){
         /**
@@ -55,6 +57,7 @@ public class Persona {
          */
         System.out.println("la fecha de nacimiento es: "+this.datebirth);
     }
+
 
 
 

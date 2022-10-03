@@ -3,7 +3,7 @@
  * y de su activación y desactivación
  * @author Jhon Anderson Galeano Santillana.
  */
-public class CuentaBancaria {
+public class BankAccount {
     /**
      * @param accountNumber contiene le número de la cuenta
      * @param activated contiene el estado de activo o inactivo de la cuenta siendo True y False respectivamente
@@ -13,7 +13,7 @@ public class CuentaBancaria {
     protected boolean activated;
     static private int count;
 
-    public CuentaBancaria( int account){
+    public BankAccount(int account){
         /**
          * El constructor inicializa el número de la cuenta
          */
@@ -34,7 +34,7 @@ public class CuentaBancaria {
         }
     }
 
-    protected String getCuenta() {
+    protected String getAccount() {
         /**
          * en este método se devulve la impresión de su cuenta y su estado
          */
